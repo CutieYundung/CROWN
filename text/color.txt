@@ -1,0 +1,26 @@
+👩‍🎨‍color guide🎨
+
+🤹main title : #C54769
+🤹sub title : #F97FB5
+🤹font : #444444 #817879
+
+🤹<header>
+stick: #FF7E00 #C54769
+
+🤹<sec1>
+#F99FC2 / #F675A7 (pink) 
+#FBE8AD / #F8DD89 (yellow)
+#BEE0F9 / #A2D2F6 (blue)
+
+🤹<sec2> 
+title : #F97FB5(pink) / #D2D2D2 (gray) / #C54769
+circle: #D2E377 / #FBE8AD / #BEE0F9 / #9453D8 
+(opacity : 50-70%) 
+button : #F97FB5
+
+🤹<sec4>
+background : #FFF5F6 
+bg font: #FDCFD4
+
+🤹<footer>
+bg : #333333
