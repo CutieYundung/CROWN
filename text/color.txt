@@ -3,6 +3,8 @@
 🤹main title : #C54769
 🤹sub title : #F97FB5
 🤹font : #444444 #817879
+🤹bg color: #FDCFD4
+
 
 🤹<header>
 stick: #FF7E00 #C54769
