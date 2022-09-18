@@ -461,17 +461,22 @@ ul.person_object li img {
 }
 /* 풍선 */
 .balloon {
+  width: 10%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
 }
+.balloon img {
+  max-width: 100%;
+}
 .balloon01 {
   top: -20%;
-  left: 18%;
+  left: 17%;
 }
 .balloon02 {
   top: -26%;
-  left: 11.5%;
+  left: 10.5%;
 }
 /* sec1 - 기업정신 */
 .sec1_entrepreneurship {
@@ -583,11 +588,55 @@ ul.person_object li img {
   z-index: -10;
   background-color: #fff5f6;
 }
+.sec1_balloon {
+  position: absolute;
+}
+.sec1_balloon img {
+  max-width: 100%;
+}
+.sec1_b1 {
+  width: 27%;
+  top: 8%;
+  left: 6%;
+}
+.sec1_b2 {
+  width: 22%;
+  top: 35%;
+  right: 5%;
+}
+.sec1_person {
+  width: 9%;
+  position: absolute;
+  bottom: -5%;
+  right: 11%;
+  z-index: 10;
+}
+.sec1_person img {
+  max-width: 100%;
+}
 /* sec2-tab */
 .sec2_productInfor {
   position: relative;
   padding-bottom: 5em;
   background-color: #fff5f6;
+}
+.sec2_sub_island {
+  width: 12%;
+  position: absolute;
+  top: 0;
+  left: -4%;
+}
+.sec2_sub_island img {
+  max-width: 100%;
+}
+.sec2_object_p01 {
+  width: 15%;
+  position: absolute;
+  top: 37%;
+  right: 8%;
+}
+.sec2_object_p01 img {
+  max-width: 100%;
 }
 .story {
 }
@@ -622,7 +671,7 @@ ul.person_object li img {
   display: flex;
   background-color: #fff;
   border-radius: 60px;
-  padding: 2em 2em 0em 2em;
+  padding: 2.5em 2em 0em 2em;
   margin: 2em 0;
 }
 .story_img {
@@ -630,6 +679,7 @@ ul.person_object li img {
   margin-right: 2em;
 }
 .story_img img {
+  width: 100%;
 }
 article {
   flex: 1.2;
@@ -644,11 +694,12 @@ article {
 .tab_title img {
 }
 article {
+  padding: 1em 0;
 }
 article p {
   font-size: 20px;
   color: #817879;
-  line-height: 2em;
+  line-height: 1.5em;
   margin: 2em 0;
 }
 .story_link {
@@ -673,6 +724,7 @@ article p {
 }
 .prod_wrap {
   width: 90%;
+  height: auto;
   margin: auto;
   overflow: hidden;
   border: 1px solid blue;
@@ -689,6 +741,8 @@ article p {
   margin-right: 2em;
 }
 .prod_bg {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -705,6 +759,7 @@ article p {
   background-color: rgb(148, 83, 216, 0.5);
 }
 .prod_bg img {
+  max-width: 100%;
   transition: 0.3s;
 }
 .prod_box span {
@@ -732,13 +787,45 @@ article p {
 }
 /* sec3_esg managment */
 .sec3_esgmanagment {
+  position: relative;
 }
+.sec3_esgmanagment > p {
+  position: absolute;
+}
+.sec3_esgmanagment > p img {
+  max-width: 100%;
+}
+.sec3_rainbow {
+  width: 20%;
+  top: -13%;
+  left: 10%;
+}
+.sec3_cloud01 {
+  width: 10%;
+  top: 8%;
+  right: 11%;
+}
+.sec3_cloud02 {
+  width: 7%;
+  top: 65%;
+  left: 43%;
+}
+.sec3_object_p2 {
+  width: 7%;
+  bottom: -5%;
+  right: 18%;
+}
+.sec3_object09 {
+  width: 2%;
+  bottom: -4%;
+  right: 25%;
+}
+
 .sec3_inner {
   display: flex;
   justify-content: space-around;
 }
 .sec3_inner > div {
-  border: 1px solid #000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
