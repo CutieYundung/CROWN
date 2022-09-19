@@ -210,21 +210,18 @@ header:hover .menu_lang a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 5px solid hotpink;
   position: relative;
 }
 .mv_inner {
   height: 100%;
-  border: 1px solid blue;
 }
 .main_island {
   width: 100%;
+  height: 100%;
   position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 32%;
+  /* transform: translate(-50%, -50%); */
   text-align: center;
-  border: 3px solid orangered;
 }
 .main_island img {
   max-width: 100%;
@@ -233,55 +230,53 @@ header:hover .menu_lang a {
 }
 /* 관람차 */
 .ferris_wheel {
-  bottom: 65%;
+  width: fit-content;
+  height: fit-content;
+  top: -5%;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
-  border: 1px solid #000;
 }
 .justGo {
   width: 100%;
   height: 100%;
   position: absolute;
-  border: 1px solid red;
 }
 .justGo > img {
   max-width: 100%;
   position: absolute;
   bottom: 25%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 6%;
 }
 .sign {
+  background: url(../image/main_visual/island/tit_justGo_on.png) no-repeat
+    center center;
   width: 50%;
+  height: 100%;
   position: absolute;
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.sign img {
-  max-width: 100%;
-}
+
 .justGo_rotation {
   width: 100%;
-  height: 100%;
+  height: 50%;
   position: absolute;
-  border: 3px solid blue;
+  top: 0%;
+  left: 0%;
+  border: 1px solid #000;
 }
-.justGo_rotation li {
+.justGo_rotation p {
   width: 15%;
   position: absolute;
-  border: 1px solid #000;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 }
-.justGo_rotation li span {
+.justGo_rotation p span {
   width: 100%;
   height: auto;
   display: block;
 }
-.justGo_rotation li span img {
+.justGo_rotation p span img {
   width: inherit;
   max-width: 100%;
 }
@@ -329,6 +324,9 @@ header:hover .menu_lang a {
 .object {
 }
 ul.object_box {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
 }
 ul.object_box li {
   position: absolute;
@@ -340,82 +338,82 @@ ul.object_box li img {
 
 li.ob01 {
   width: 5%;
-  top: 15%;
+  top: 8%;
   right: 37%;
 }
 li.ob02 {
   width: 10%;
-  top: 15%;
+  top: 6%;
   left: 22%;
 }
 li.ob03 {
   width: 8%;
-  top: 25%;
+  top: 13%;
   left: 51.5%;
 }
 li.ob04 {
   width: 7%;
-  top: 14%;
+  top: 7%;
   left: 57.5%;
 }
 li.ob05 {
   width: 20%;
-  top: 0%;
+  top: 4%;
   left: 63%;
 }
 li.ob06 {
   width: 9%;
-  top: 6%;
+  top: 4%;
   left: 61%;
 }
 li.ob07 {
   width: 5%;
-  top: 25%;
+  top: 17%;
   left: 70%;
 }
 li.ob08 {
   width: 7%;
-  top: 25%;
+  top: 17%;
   left: 72%;
 }
 li.ob09 {
   width: 9%;
-  top: 34%;
+  top: 20%;
   left: 66%;
 }
 li.ob10 {
   width: 3%;
-  top: 29%;
+  top: 14%;
   left: 45.5%;
 }
 li.ob11 {
   width: 20%;
-  top: 5%;
+  top: 2%;
   left: 29%;
 }
 li.ob12 {
   width: 5%;
-  top: 34%;
+  top: 17%;
   left: 30%;
 }
 li.ob13 {
   width: 7%;
-  top: 37%;
+  top: 19%;
   left: 20%;
 }
 li.ob14 {
   width: 5%;
-  top: 37%;
+  top: 22%;
   left: 72%;
 }
 li.ob15 {
   width: 7%;
-  top: 38%;
+  top: 21%;
   left: 59%;
 }
 li.ob16 {
   width: 5%;
-  top: 48%;
+  top: 24%;
   left: 39%;
 }
 /* 사람 */
@@ -423,10 +421,9 @@ li.ob16 {
 }
 ul.person_object {
   width: 100%;
-  height: 70%;
+  height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
 }
 ul.person_object li {
   position: absolute;
@@ -436,27 +433,27 @@ ul.person_object li img {
 }
 .po01 {
   width: 6.5%;
-  top: 58%;
+  top: 20%;
   left: 30%;
 }
 .po02 {
   width: 3%;
-  top: 55%;
+  top: 20%;
   left: 45%;
 }
 .po03 {
   width: 3%;
-  top: 42%;
+  top: 15%;
   left: 35.5%;
 }
 .po04 {
   width: 9%;
-  top: 39%;
+  top: 15%;
   left: 59%;
 }
 .po05 {
   width: 5%;
-  top: 36%;
+  top: 14%;
   left: 53%;
 }
 /* 풍선 */
@@ -471,11 +468,11 @@ ul.person_object li img {
   max-width: 100%;
 }
 .balloon01 {
-  top: -20%;
-  left: 17%;
+  top: -10%;
+  left: 16%;
 }
 .balloon02 {
-  top: -26%;
+  top: -16%;
   left: 10.5%;
 }
 /* sec1 - 기업정신 */
@@ -623,7 +620,7 @@ ul.person_object li img {
 .sec2_sub_island {
   width: 12%;
   position: absolute;
-  top: 0;
+  top: 7%;
   left: -4%;
 }
 .sec2_sub_island img {
@@ -632,8 +629,8 @@ ul.person_object li img {
 .sec2_object_p01 {
   width: 15%;
   position: absolute;
-  top: 37%;
-  right: 8%;
+  top: 44%;
+  right: 5%;
 }
 .sec2_object_p01 img {
   max-width: 100%;
@@ -644,6 +641,7 @@ ul.person_object li img {
 }
 .sec2_tab {
   width: 100%;
+  padding-top: 5em;
 }
 .sec2_tab ul {
   width: 30%;
@@ -785,9 +783,11 @@ article p {
 .prod_box a:hover {
   background-color: #c54769;
 }
+
 /* sec3_esg managment */
 .sec3_esgmanagment {
   position: relative;
+  padding-top: 5em;
 }
 .sec3_esgmanagment > p {
   position: absolute;
@@ -797,12 +797,12 @@ article p {
 }
 .sec3_rainbow {
   width: 20%;
-  top: -13%;
-  left: 10%;
+  top: -5%;
+  left: 12%;
 }
 .sec3_cloud01 {
   width: 10%;
-  top: 8%;
+  top: 14%;
   right: 11%;
 }
 .sec3_cloud02 {
@@ -812,12 +812,12 @@ article p {
 }
 .sec3_object_p2 {
   width: 7%;
-  bottom: -5%;
+  bottom: 0%;
   right: 18%;
 }
 .sec3_object09 {
   width: 2%;
-  bottom: -4%;
+  bottom: 1%;
   right: 25%;
 }
 
@@ -849,6 +849,9 @@ article p {
 .column2 > .esg_content:nth-child(1) {
   margin-bottom: 5em;
 }
+.column2 > .esg_content:nth-child(2) {
+  margin-bottom: 5em;
+}
 .esg_content {
 }
 .esg_content a {
@@ -859,6 +862,7 @@ article p {
   font-size: 25px;
   color: #c54769;
   margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 .esg_content p {
   color: #817879;
