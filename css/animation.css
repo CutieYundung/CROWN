@@ -42,12 +42,91 @@
 }
 /* 짱구과자 */
 .justGo_rotation {
-  animation: justGo_r 10s linear infinite;
+  /* animation: justGo_r 10s linear infinite; */
 }
-@keyframes justGo_r {
+/* @keyframes justGo_r {
   100% {
     transform: rotate(360deg);
     transform-origin: 50% top;
+  }
+} */
+
+.jgr01 {
+  animation-name: jgr01;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-color: blueviolet;
+}
+@keyframes jgr01 {
+  0% {
+    transform: translate(0%, 00%) rotate(0deg);
+  }
+  12% {
+    transform: translate(-200%, -78%);
+  }
+  24% {
+    transform: translate(-265%, -263%);
+  }
+  36% {
+    transform: translate(-200%, -443%);
+  }
+  48% {
+    transform: translate(-11%, -527%);
+  }
+  60% {
+    transform: translate(172%, -446%);
+  }
+  72% {
+    transform: translate(250%, -270%);
+  }
+  84% {
+    transform: translate(190%, -70%);
+  }
+  96% {
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+.jgr02 {
+  animation-name: jgr02;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  background-color: aqua;
+}
+@keyframes jgr02 {
+  0% {
+    transform: translate(0%, 00%) rotate(0deg);
+  }
+  12% {
+    transform: translate(-70%, -200%);
+  }
+  24% {
+    transform: translate(0%, -380%);
+  }
+  36% {
+    transform: translate(190%, -460%);
+  }
+  48% {
+    transform: translate(375%, -380%);
+  }
+  60% {
+    transform: translate(450%, -190%);
+  }
+  72% {
+    transform: translate(390%, -00%);
+  }
+  84% {
+    transform: translate(200%, 80%);
+  }
+  96% {
+    /* transform: translate(190%, -78%); */
+  }
+  100% {
+    transform: translate(-20%, -2%);
   }
 }
 /* object */
