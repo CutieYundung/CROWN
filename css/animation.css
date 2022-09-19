@@ -123,7 +123,8 @@ li.ob14 {
   animation-delay: 1.2s;
 }
 /* 풍선 */
-.balloon {
+.balloon,
+.sec1_balloon {
   animation-name: balloon;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -132,23 +133,79 @@ li.ob14 {
   0% {
     transform: translateY(0px);
   }
-
-  /* 25% {
-    transform: translateY(-8%);
-  } */
   50% {
     transform: translateY(-10%);
   }
-  /* 75% {
-    transform: translateY(4%);
-  } */
   100% {
     transform: translateY(0%);
   }
 }
-.balloon01 {
+.balloon01,
+.sec1_b1 {
   animation-delay: 1.5s;
 }
 .sec_b2 {
   animation-delay: 5s;
 }
+
+/* 무지개 */
+.sec3_rainbow {
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes rainbow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.sec3_cloud01,
+.sec3_cloud02 {
+  animation-name: cloud;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+.sec3_cloud02 {
+  animation-duration: 7s;
+  animation-delay: 0.3s;
+}
+@keyframes cloud {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+/* sec1 사람 */
+.sec1_person {
+  animation-name: jump;
+  animation-duration: 1s;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} ;
