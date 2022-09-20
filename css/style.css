@@ -72,7 +72,7 @@ header {
   width: 120px;
 }
 .header_logo img {
-  width: 100%;
+  max-width: 100%;
 }
 header:hover {
   background-color: rgb(255, 255, 255, 0.9);
@@ -206,7 +206,7 @@ header:hover .menu_lang a {
   max-width: 1920px;
   height: 1080px;
   margin: auto;
-  background: url(../image/main_visual/background.jpg) no-repeat;
+  background: url(../image/main_visual/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -241,7 +241,6 @@ header:hover .menu_lang a {
 }
 .justGo {
   width: 50%;
-  height: ;
   position: absolute;
   top: 00%;
   left: 50%;
@@ -253,14 +252,14 @@ header:hover .menu_lang a {
 .sign {
   background: url(../image/main_visual/island/tit_justGo_on.png) no-repeat
     center center;
-  width: 50%;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 52%;
   left: 50%;
+  z-index: 100;
   transform: translate(-50%, -50%);
 }
-
 .justGo_rotation {
   width: 40%;
   height: 100%;
@@ -322,8 +321,11 @@ header:hover .menu_lang a {
   /* background-color: purple; */
 }
 .justGoBtm {
-  width: 100%;
-  height: auto;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 .justGoBtm img {
   max-width: 100%;

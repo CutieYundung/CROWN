@@ -1,0 +1,233 @@
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .inner {
+    width: 100%;
+    margin: auto;
+  }
+  /* header */
+  header {
+    width: 100%;
+
+    background-color: rgb(255, 255, 255);
+    /* 스크롤 내리먄 보이게 */
+  }
+  .header_inner {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border: 1px solid #000;
+    padding: 1em;
+  }
+  .header_logo {
+    width: 150px;
+    border: 1px solid #000;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    width: fit-content;
+  }
+  .menu_icon {
+    width: 25px;
+    height: 25px;
+  }
+  .menu_icon span {
+    height: 4px;
+    background-color: #fff;
+    /* 스크롤시 핑크 */
+  }
+  .menu_lang,
+  .menu_search {
+    display: none;
+  }
+  /* mainVisual */
+  .main_visual {
+    max-width: 100%;
+    height: 80vh;
+    background: url(../image/main_visual/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  /* 관람차 */
+  .ferris_wheel {
+    top: 41%;
+  }
+  /* 간판 */
+  .sign {
+    background: url(../image/main_visual/island/tit_justGo_on.png) no-repeat
+      center center;
+    background-size: 50%;
+    max-width: 100%;
+  }
+  @keyframes sign {
+    0% {
+      background-size: 50%;
+    }
+    100% {
+      background-size: 50%;
+    }
+  }
+  .justGo_rotation {
+    width: 100%;
+    top: 0%;
+    left: 0%;
+  }
+  .justGo_rotation p {
+    width: 14%;
+  }
+  /* object 배치 */
+  li.ob01 {
+    width: 5%;
+    top: 4%;
+    right: 32%;
+  }
+  li.ob02 {
+    width: 15%;
+    top: 4%;
+    left: 10%;
+  }
+  li.ob03 {
+    width: 8%;
+    top: 7%;
+    left: 60%;
+  }
+  li.ob04 {
+    width: 12%;
+    top: 2%;
+    left: 66%;
+  }
+  li.ob05 {
+    width: 20%;
+    top: 3%;
+    left: 74%;
+  }
+  li.ob06 {
+    width: 9%;
+    top: 4%;
+    left: 61%;
+  }
+  li.ob07 {
+    width: 5%;
+    top: 17%;
+    left: 70%;
+    display: none;
+  }
+  li.ob08 {
+    width: 7%;
+    top: 17%;
+    left: 72%;
+    v
+  }
+  li.ob09 {
+    width: 9%;
+    top: 20%;
+    left: 66%;
+    display: none;
+  }
+  li.ob10 {
+    width: 3%;
+    top: 14%;
+    left: 45.5%;
+    display: none;
+  }
+  li.ob11 {
+    width: 20%;
+    top: 2%;
+    left: 29%;
+    display: none;
+  }
+  li.ob12 {
+    width: 5%;
+    top: 17%;
+    left: 30%;
+    display: none;
+  }
+  li.ob13 {
+    width: 7%;
+    top: 19%;
+    left: 20%;
+    display: none;
+  }
+  li.ob14 {
+    width: 5%;
+    top: 22%;
+    left: 72%;
+    display: none;
+  }
+  li.ob15 {
+    width: 7%;
+    top: 21%;
+    left: 59%;
+    display: none;
+  }
+  li.ob16 {
+    width: 5%;
+    top: 24%;
+    left: 39%;
+    display: none;
+  }
+  /* 사람 */
+  .person {
+  }
+  ul.person_object {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  ul.person_object li {
+    position: absolute;
+  }
+  ul.person_object li img {
+    max-width: 100%;
+  }
+  .po01 {
+    width: 6.5%;
+    top: 20%;
+    left: 30%;
+  }
+  .po02 {
+    width: 3%;
+    top: 20%;
+    left: 45%;
+  }
+  .po03 {
+    width: 3%;
+    top: 15%;
+    left: 35.5%;
+  }
+  .po04 {
+    width: 9%;
+    top: 15%;
+    left: 59%;
+  }
+  .po05 {
+    width: 5%;
+    top: 14%;
+    left: 53%;
+  }
+  /* 풍선 */
+  .balloon {
+    width: 10%;
+    height: auto;
+    position: absolute;
+  }
+  .balloon img {
+    max-width: 100%;
+  }
+  .balloon01 {
+    top: 20%;
+    left: 18%;
+  }
+  .balloon02 {
+    top: 20%;
+    left: 11.5%;
+  }
+  /* 이 안으로 작성 */
+}
