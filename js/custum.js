@@ -20,6 +20,8 @@ $(document).ready(function () {
     $(".sec1_balloon").removeClass("fixed");
   });
 	});
+
+
   //sec2 탭메뉴
   var $content = $(".tab"),
   $title = $(".sec2_tab ul li");
@@ -37,18 +39,18 @@ $(document).ready(function () {
       });
 
 // slick slide
-$(".auto_slide").slick({
-  slidesToShow: 7,
-  autoplay: true,
-  autoplaySpeed: 0,
-  speed:5000,
-  cssEase: "linear",
-  draggable : true,
-  // pauseOnHover: true,
-  // arrows: false,
-});
-$(".slide").slick({
-});
+// $(".auto_slide").slick({
+//   slidesToShow: 7,
+//   autoplay: true,
+//   autoplaySpeed: 10,
+//   speed:2000,  
+//   cssEase: "linear",
+//   draggable : true,
+//   infinite: true,
+//   slidesToScroll: 3,
+// });
+
+// swiper
 
 // hover
 $('.service_text> div > a').on('mouseenter',function(){
@@ -58,4 +60,4 @@ $('.service_text> div > a').on('mouseenter',function(){
 $('.service_text> div > a').on('mouseleave',function(){
   $('.sec4_service').css('background', '#fff5f6');
   $('.sec4_bg>p').css('color', '#fdcfd4');
-})
+});
