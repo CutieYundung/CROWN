@@ -231,23 +231,24 @@ header:hover .menu_lang a {
 }
 /* 관람차 */
 .ferris_wheel {
-  width: fit-content;
-  height: fit-content;
-  top: -5%;
+  width: 100%;
+  height: inherit;
+  /* top: -5%; */
+  top: 45%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   position: absolute;
 }
 .justGo {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: ;
   position: absolute;
+  top: 00%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .justGo > img {
   max-width: 100%;
-  position: absolute;
-  bottom: 25%;
-  left: 6%;
 }
 .sign {
   background: url(../image/main_visual/island/tit_justGo_on.png) no-repeat
@@ -255,23 +256,21 @@ header:hover .menu_lang a {
   width: 50%;
   height: 100%;
   position: absolute;
-  top: 0%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .justGo_rotation {
-  width: 100%;
-  height: 50%;
+  width: 40%;
+  height: 100%;
   position: absolute;
   top: 0%;
-  left: 0%;
-  border: 3px solid red;
+  left: 30%;
 }
 .justGo_rotation p {
   width: 15%;
   position: absolute;
-  border: 1px solid #000;
 }
 .justGo_rotation p span {
   width: 100%;
@@ -283,36 +282,44 @@ header:hover .menu_lang a {
   max-width: 100%;
 }
 .jgr01 {
-  top: 105%;
+  top: 84.5%;
   left: 43%;
+  /* background-color: red; */
 }
 .jgr02 {
-  top: 65%;
-  left: 13%;
+  top: 72%;
+  left: 11.5%;
+  /* background-color: orange; */
 }
 .jgr03 {
-  top: -35%;
-  left: 3%;
+  top: 42%;
+  left: 1%;
+  /* background-color: yellow; */
 }
 .jgr04 {
-  top: -130%;
-  left: 13%;
+  top: 12%;
+  left: 12%;
+  /* background-color: lightgreen; */
 }
 .jgr05 {
-  top: -175%;
+  top: 0%;
   left: 41%;
+  /* background-color: green; */
 }
 .jgr06 {
-  top: -130%;
-  right: 16%;
+  top: 13%;
+  left: 72%;
+  /* background-color: blue; */
 }
 .jgr07 {
-  top: -35%;
-  right: 5%;
+  top: 43%;
+  left: 84%;
+  /* background-color: navy; */
 }
 .jgr08 {
-  top: 65%;
-  right: 14%;
+  top: 72%;
+  left: 72%;
+  /* background-color: purple; */
 }
 .justGoBtm {
   width: 100%;

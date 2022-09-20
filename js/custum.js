@@ -10,15 +10,16 @@ $(document).ready(function () {
   //sec1 풍선 고정
   $(window).scroll(function () {
     //스크롤 높이 측정
-    var top = $(window).scrollTop();
-    console.log(top);
+    var top = $(window).scrollTop()
+    off = $('.sec1_b1').offset();
+    console.log(off);
     
-    if (2000 >= top && top >= 1100) {
+    if (2000 >= top && top >= 1080) {
       $(".sec1_balloon").addClass("fixed");
     } else
     $(".sec1_balloon").removeClass("fixed");
   });
-
+	});
   //sec2 탭메뉴
   var $content = $(".tab"),
   $title = $(".sec2_tab ul li");
@@ -58,4 +59,3 @@ $('.service_text> div > a').on('mouseleave',function(){
   $('.sec4_service').css('background', '#fff5f6');
   $('.sec4_bg>p').css('color', '#fdcfd4');
 })
-});

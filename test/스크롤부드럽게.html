@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>스크롤 상단 메뉴 고정</title>
+
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var topBar = $("#topBar").offset();
+		$(window).scroll(function(){
+			var docScrollY = $(document).scrollTop()
+			var barThis = $("#topBar")
+			var fixNext = $("#fixNextTag")
+			if( docScrollY > topBar.top ) {
+				barThis.addClass("top_bar_fix");
+				fixNext.addClass("pd_top");
+			}else{
+				barThis.removeClass("top_bar_fix");
+				fixNext.removeClass("pd_top");
+			}
+		});
+	})
+</script>
+
+<style type="text/css">
+body {margin:0;padding:0;}
+.wrap{font-size:70px}
+.wrap div{width:100%; text-align:center; font-size:70px; color:#fff;}
+.top_bar_fix{position:fixed; top:0; left:0;}
+.pd_top{padding-top:150px;}
+.wrap .top_bn_zone{height:300px; background:#777; line-height:30px;}
+.wrap .top_fix_zone{clear:both; height:150px; background:#d63232; line-height:30px;}
+.wrap .top_con_zone{clear:both; background:#ededed; color:#888; text-align:center; font-size:70px;}
+</style>
+
+</head>
+<body>
+		
+<div class="wrap">
+
+ <div class="top_bn_zone">
+		<br><br>상단 배녀 영역
+ </div>
+
+ <div class="top_fix_zone" id="topBar">
+		<br><br>상단 메뉴 고정 영역
+ </div>
+
+ <div class="top_con_zone" id="fixNextTag">
+
+하단 contents 영역 <br>
+hgj1111111111111g <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hasfasfasfasgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+asfasfasfasfas <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hasfasfagjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hasfasfsfgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgasdfafasfjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+sdfsdfsdfhgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjdfasdfsafdsag <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjgasdfasdfasdf <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+hasfasdfasgjg <br>
+hgjg <br>
+hgjg <br>
+hgjg <br>
+sdff
+
+</div>
+</div>
+
+</body>
+</html>
