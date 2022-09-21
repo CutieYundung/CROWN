@@ -1,11 +1,11 @@
 $(document).ready(function () {
   // a클릭시 부드럽게 이동
-  $('a').click(function() {
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-    return false;
-  });
+  // $('a').click(function() {
+  //   $('html, body').animate({
+  //       scrollTop: $($.attr(this, 'href')).offset().top
+  //   }, 500);
+  //   return false;
+  // });
 
   //sec1 풍선 고정
   $(window).scroll(function () {
@@ -19,7 +19,6 @@ $(document).ready(function () {
     } else
     $(".sec1_balloon").removeClass("fixed");
   });
-	});
 
 
   //sec2 탭메뉴
@@ -60,4 +59,5 @@ $('.service_text> div > a').on('mouseenter',function(){
 $('.service_text> div > a').on('mouseleave',function(){
   $('.sec4_service').css('background', '#fff5f6');
   $('.sec4_bg>p').css('color', '#fdcfd4');
+});
 });

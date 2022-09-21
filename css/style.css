@@ -875,6 +875,7 @@ article p {
 .esg_content a {
 }
 .esg_content a img {
+  max-width: 100%;
 }
 .esg_content h5 {
   font-size: 25px;

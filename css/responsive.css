@@ -15,7 +15,7 @@
   }
   .header_inner {
     width: 100%;
-    height: 8vh;
+    height: 7vh;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -122,7 +122,6 @@
     width: 7%;
     top: 17%;
     left: 72%;
-    v
   }
   li.ob09 {
     width: 9%;
@@ -229,5 +228,280 @@
     top: 20%;
     left: 11.5%;
   }
+  /* sec1 -기업정신 */
+  .wrap {
+    position: relative;
+  }
+  .sec1_entrepreneurship {
+    width: 100%;
+    /* position: absolute; */
+    /* top: 12%; */
+    /* left: 0; */
+    border: 1px solid #000;
+    padding: 0 1em;
+    margin: 0;
+  }
+  .title h4 {
+    color: #f97fb5;
+    font-size: 16px;
+  }
+  .title h2 {
+    color: #c54769;
+    font-size: 30px;
+  }
+  .mind_box {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding-top: 7em;
+  }
+
+  .mind {
+    color: #fff;
+    width: calc(90% / 3);
+    height: auto;
+    position: relative;
+  }
+  .mind_circle {
+    position: absolute;
+    top: -20%;
+    /* clip-path: circle(120px at 50% 50%); */
+  }
+  .mind_circle span {
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-color: #f675a7;
+    border-radius: 50%;
+    position: absolute;
+    top: -0%;
+    left: 51.5%;
+    transform: translateX(-50%);
+  }
+  .mind:nth-child(2) .mind_circle span {
+    background-color: #f8dd89;
+  }
+  .mind:nth-child(3) .mind_circle span {
+    background-color: #a2d2f6;
+  }
+  .mind_circle img {
+    width: 80%;
+    object-fit: contain;
+    object-position: 30px -10px;
+  }
+  .mc2 img {
+    width: 80%;
+    object-position: 022px -10px;
+  }
+  .mc3 img {
+    width: 80%;
+    object-position: 20px -12px;
+  }
+  .clip_path {
+    clip-path: url(none);
+    margin: 0 auto;
+  }
+  .mind_circle svg {
+    display: none;
+  }
+  .mind_text {
+    height: 100%;
+    text-align: center;
+    border-radius: 25px;
+    padding: 3em 0.5em 1em 0.5em;
+  }
+  .mind:nth-child(1) > .mind_text {
+    background-color: #f99fc2;
+  }
+  .mind:nth-child(2) > .mind_text {
+    background-color: #fbe8ad;
+  }
+  .mind:nth-child(3) > .mind_text {
+    background-color: #bee0f9;
+  }
+
+  .mind_text > span {
+    font-family: "bold";
+    display: block;
+    font-size: 20px;
+  }
+  .mind_text > span:nth-child(1) {
+    font-size: 16px;
+    margin-bottom: 0.7em;
+  }
+  .mind_text > span:nth-child(2) {
+    font-size: 18px;
+    line-height: 1em;
+  }
+  .mind_text > span > em {
+    font-style: normal;
+    color: #c54769;
+  }
+  .dot {
+    margin: 0.5em 0;
+  }
+  .mind_text > p {
+    line-height: 2.5em;
+    font-size: 14px;
+  }
+  .pink_bg {
+    width: 100%;
+    height: calc(26% + 5em);
+    position: absolute;
+    bottom: 0em;
+    z-index: -10;
+    background-color: #fff5f6;
+  }
+  .sec1_person {
+    width: 9%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: 10;
+  }
+  /* sec2 - tab */
+  .sec2_productInfor {
+    width: 100%;
+    padding: 0 1em;
+    padding-bottom: 2em;
+  }
+  .sec2_sub_island {
+    width: 12%;
+    position: absolute;
+    top: 7%;
+    left: -4%;
+  }
+  .sec2_tab {
+    width: 100%;
+    padding-top: 5em;
+  }
+  .sec2_tab ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5vw;
+    font-family: "bold";
+    color: #d2d2d2;
+    margin: auto;
+  }
+  .story_box {
+    display: flex;
+    background-color: #fff;
+    border-radius: 60px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 2em 0 2em 0;
+  }
+  .story_img {
+    flex: 0.5;
+    align-self: center;
+    margin-right: 1em;
+  }
+  .tab_title {
+    height: fit-content;
+    display: flex;
+  }
+  .tab_title h2 {
+    margin-bottom: 0.5em;
+  }
+  .tab_title img {
+    height: 30px;
+  }
+  article p {
+    font-size: 2.5vw;
+    color: #817879;
+    line-height: 1.25em;
+    margin: 0em 0;
+  }
+  .story_link {
+    display: flex;
+  }
+  .story_link a {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    font-size: 2.2vw;
+    padding: 0.5em 0.5em;
+    border-radius: 15px;
+    font-family: "bold";
+    border: 1px solid #c54769;
+    transition: 0.3s;
+    margin-top: 1em;
+  }
+  .story_link a:nth-of-type(1) {
+    background-color: #c54769;
+    color: #fff;
+    margin-right: 0.5em;
+  }
+  /* 상품 슬라이드 */
+  .prod_wrap {
+    width: 100%;
+  }
+  .prod_box {
+    padding: 0 0em;
+    margin-right: 0em;
+  }
+  .prod_bg {
+    width: 120px;
+    height: 120px;
+  }
+  .prod_box span {
+    font-size: 2.2vw;
+  }
+  .prod_box a {
+    width: 90%;
+    font-size: 2.5vw;
+    padding: 0.6em 0;
+    display: inline-block;
+  }
+  /* sec3 - esg 경영 */
+  .sec3_esgmanagment {
+    width: 100%;
+    position: relative;
+    padding-top: 5em;
+  }
+  .sec3_inner {
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+  }
   /* 이 안으로 작성 */
+}
+@media (max-width: 500px) {
+  .mind_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0em;
+  }
+  .mind {
+    color: #fff;
+    width: 335px;
+    height: auto;
+    position: relative;
+  }
+  .mind_circle {
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+  }
+  .mind_circle span {
+    width: 210px;
+    height: 210px;
+    display: block;
+    background-color: #f675a7;
+    border-radius: 50%;
+    position: absolute;
+    top: 31px;
+    left: 51.5%;
+    transform: translateX(-50%);
+  }
+  /* 상품슬라이드 */
+  .prod_bg {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 }
