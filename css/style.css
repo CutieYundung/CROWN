@@ -914,21 +914,27 @@ article p {
 }
 .sec4_inner > div {
   position: relative;
-  width: 50%;
 }
 .sec4_inner > div > div {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .service_island {
+  width: 50%;
 }
 .service_island img {
+  max-width: 100%;
 }
 .service_text {
+  width: 50%;
   float: right;
   color: #444444;
+}
+.service_text > div {
+  margin-left: 10em;
 }
 .service_text h3 {
   font-size: 30px;
@@ -956,15 +962,6 @@ article p {
   border-radius: 5px;
   background-color: #444444;
 }
-/* .arrow::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  border-bottom: 2px solid #444444;
-  transform: translateY(-50%);
-} */
 .arrow::after {
   content: "";
   position: absolute;

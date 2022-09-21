@@ -16,8 +16,8 @@ $(document).ready(function () {
     
     if (2000 >= top && top >= 1080) {
       $(".sec1_balloon").addClass("fixed");
-    } else
-    $(".sec1_balloon").removeClass("fixed");
+    } else{
+    $(".sec1_balloon").removeClass("fixed");}
   });
 
 
@@ -37,21 +37,7 @@ $(document).ready(function () {
         $(this).addClass("on"); //li에 클래스 값 추가
       });
 
-// slick slide
-// $(".auto_slide").slick({
-//   slidesToShow: 7,
-//   autoplay: true,
-//   autoplaySpeed: 10,
-//   speed:2000,  
-//   cssEase: "linear",
-//   draggable : true,
-//   infinite: true,
-//   slidesToScroll: 3,
-// });
-
-// swiper
-
-// hover
+// sec4 - hover
 $('.service_text> div > a').on('mouseenter',function(){
   $('.sec4_service').css('background', 'linear-gradient( to left, #B1C5F8, #89E2F2, #F7B1D3, #EADE88, #21F4C9)');
   $('.sec4_bg>p').css('color', '#fff');
@@ -60,4 +46,15 @@ $('.service_text> div > a').on('mouseleave',function(){
   $('.sec4_service').css('background', '#fff5f6');
   $('.sec4_bg>p').css('color', '#fdcfd4');
 });
+
+// footer 탬메뉴 (모바일)
+if(matchMedia('screen and (max-width:767px)').matches){
+$('.familysite > ul').css('display','none');
+$('.familysite > h6').click(function(){
+  $('.familysite > ul').slideToggle(500);
+  $('.select span').toggleClass('active');
+})}else if(matchMedia('screen and (min-width:768px)').matches){
+  $('.familysite > ul').css('display','block');
+}
+// 이 안으로 작성
 });

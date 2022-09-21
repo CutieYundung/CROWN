@@ -1,5 +1,4 @@
   // swiper
-
   if (matchMedia("screen and (max-width: 767px)").matches) {
     const swiper = new Swiper(".swiper", {
       slidesPerView: 4,
@@ -10,7 +9,6 @@
         clickable: true,
       },
     });
-  
   }else if (matchMedia("screen and (min-width: 768px)").matches) {
     const swiper = new Swiper(".swiper", {
       slidesPerView: 7,
@@ -21,4 +19,5 @@
         clickable: true,
       },
     });
-  }
+    }
+  
