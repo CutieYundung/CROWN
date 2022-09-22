@@ -22,6 +22,7 @@ body {
 .wrap {
   overflow: hidden;
   position: relative;
+  background: url(../image/main_visual/mobile.jpg) no-repeat;
 }
 .inner {
   width: 1200px;
@@ -55,6 +56,13 @@ header {
   position: relative;
   background-color: #c54769;
 }
+/* .top_stick::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 2px;
+  background-color: #ff7e00;
+} */
 .header_inner {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -78,27 +86,36 @@ header:hover ul.gnb li a:hover {
   color: #ff7e00;
   position: relative;
 }
-/* header:hover ul.gnb li a::before {
+header:hover ul.gnb li a.orange {
+  color: #ff7e00;
+  position: relative;
+}
+header:hover ul.gnb > li > ul > li > a:hover {
+  color: #ff7e00;
+  position: relative;
+  /* font-family: "bold"; */
+}
+header:hover ul.gnb > li > ul > li > a::before {
   content: "";
-  width: 00%;
+  width: 0%;
   height: 100%;
   position: absolute;
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
-  border-bottom: 1px solid #ff7e00;
+  border-bottom: 1.7px solid #ff7e00;
   transition: 0.3s;
 }
-header:hover ul.gnb li a:hover::before {
+header:hover ul.gnb > li > ul > li > a:hover::before {
   content: "";
   width: 70%;
   height: 100%;
   position: absolute;
-  top: 0px;
+  top: 2px;
   left: 50%;
   transform: translateX(-50%);
-  border-bottom: 1px solid #ff7e00;
-} */
+  border-bottom: 1.7px solid #ff7e00;
+}
 
 /* navigation 네비게이션 */
 nav {
@@ -133,7 +150,11 @@ ul.gnb {
   height: 218px;
   position: absolute;
   left: 14%;
-  overflow: hidden;
+  background: url(../image/header/nav/nav_0.png);
+  background-repeat: no-repeat;
+  background-position: 0% -2347.286px;
+  /* overflow: hidden;
+  border: 1px solid #000;
   background-repeat: no-repeat;
   background-position: 0% -543.934px;
   background-position: 0% -800.802px;
@@ -143,6 +164,7 @@ ul.gnb {
   background-position: 0% -1835.934px;
   background-position: 0% -2089.934px;
   background-position: 0% -2347.286px;
+  */
 }
 .gnb li ul {
   display: none;
@@ -164,6 +186,45 @@ ul.gnb {
   font-size: 15px;
   padding: 0;
 }
+/* #nav {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 70px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.nav_inner {
+  display: flex;
+}
+.nav_inform {
+  width: 19%;
+  border: 1px solid #000;
+}
+.nav_inform img {
+}
+.nav_inform span {
+}
+.nav_inform p {
+}
+.lnb {
+  width: 63%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.lnb ul {
+  border: 1px solid #000;
+  width: 100%;
+}
+.lnb ul li {
+  margin-bottom: 1em;
+}
+.lnb ul li a {
+  font-size: 15px;
+  color: ;
+} */
 /* menu */
 .menu {
   width: 80%;

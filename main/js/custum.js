@@ -1,14 +1,9 @@
 $(document).ready(function () {
-  // a클릭시 부드럽게 이동
-  // $('a').click(function() {
-  //   $('html, body').animate({
-  //       scrollTop: $($.attr(this, 'href')).offset().top
-  //   }, 500);
-  //   return false;
-  // });
   window.onresize = function () {
     document.location.reload();
   };
+
+
   // header
   $(".gnb > li > a, .gnb > li > ul").on("mouseenter", function () {
     $(".gnb > li > ul, .nav_bg").stop().slideDown(200);
@@ -16,6 +11,8 @@ $(document).ready(function () {
   $(".nav_bg, header").on("mouseleave", function () {
     $(".gnb > li > ul, .nav_bg").stop().slideUp(100)
   });
+
+
 // nav-img
   $('.gnb > li:nth-child(1)').hover(function(){
     $('.nav_info').css('background', 'url(../main/image/header/nav/nav_0.png) 0% -2347.286px')
@@ -59,6 +56,8 @@ $(document).ready(function () {
     $('.gnb > li:nth-child(6) >a').css('color','#f97fb5')
   })
 
+
+
   //sec1 풍선 고정
   if (matchMedia("screen and (max-width:767px)").matches) {
     var sec1H = $(".sec1_entrepreneurship").outerHeight();
@@ -79,6 +78,8 @@ $(document).ready(function () {
     });
   }
 
+
+
   //sec2 탭메뉴
   var $content = $(".tab"),
     $title = $(".sec2_tab ul li");
@@ -95,6 +96,8 @@ $(document).ready(function () {
     $(this).addClass("on"); //li에 클래스 값 추가
   });
 
+
+
   // sec4 - hover
   $(".service_text> div > a").on("mouseenter", function () {
     $(".sec4_service").css(
@@ -108,6 +111,8 @@ $(document).ready(function () {
     $(".sec4_bg>p").css("color", "#fdcfd4");
   });
 
+
+  
   // footer 탭메뉴 (모바일)
   if (matchMedia("screen and (max-width:767px)").matches) {
     $(".familysite > ul").css("display", "none");
