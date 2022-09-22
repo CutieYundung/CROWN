@@ -225,27 +225,25 @@
   .sec1_entrepreneurship {
     width: 100%;
     position: absolute;
-    top: 55vh;
+    top: 50vh;
     left: 0;
-    padding: 0 1em;
+    padding: 0 1em 0em 1em;
     margin: 0;
   }
   .title h4 {
     color: #f97fb5;
-    font-size: 16px;
+    font-size: 3vw;
   }
   .title h2 {
     color: #c54769;
-    font-size: 30px;
+    font-size: 6vw;
   }
   .mind_box {
     display: flex;
     justify-content: space-between;
     padding-top: 7em;
   }
-
   .mind {
-    color: #fff;
     width: calc(90% / 3);
     height: auto;
     position: relative;
@@ -341,17 +339,17 @@
     background-color: #fff5f6;
   }
   .sec1_person {
-    width: 9%;
+    width: 15%;
     position: absolute;
     bottom: 0%;
-    right: 0%;
+    right: 2%;
     z-index: 10;
   }
   /* sec2 - tab */
   .sec2_productInfor {
     width: 100%;
     padding: 0 1.5em 2em 1.5em;
-    margin-top: 50em;
+    margin-top: 672.785px;
   }
   .sec2_sub_island {
     width: 12%;
@@ -371,7 +369,7 @@
   .story_box {
     display: flex;
     border-radius: 30px;
-    padding: 0.5em 0.5em 0.5em 0.5em;
+    padding: 1em;
     margin: 2em 0 2em 0;
   }
   .story_img {
@@ -389,11 +387,20 @@
   .tab_title img {
     height: 30px;
   }
+  article {
+    width: 100%;
+  }
   article p {
+    width: 100%;
     font-size: 2.7vw;
     color: #817879;
     line-height: 1.25em;
     margin: 0em 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
   .story_link {
     display: flex;
@@ -664,53 +671,43 @@
     background-color: #f675a7;
     border-radius: 50%;
     position: absolute;
-    top: 50px;
+    top: 22%;
     left: 20%;
     transform: translateX(-50%);
-  }
-  .mind:nth-child(2) .mind_circle span {
-    background-color: #f8dd89;
-  }
-  .mind:nth-child(3) .mind_circle span {
-    background-color: #a2d2f6;
   }
   .mind_circle img {
     width: 30%;
     object-fit: contain;
-    object-position: 0px -0px;
+    object-position: 0px 2px;
   }
   .mc2 img {
     width: 30%;
-    object-position: 0px -0px;
+    object-position: 0px 0px;
   }
   .mc3 img {
     width: 30%;
-    object-position: 0px -0px;
+    object-position: 0px 6px;
   }
   .clip_path {
-    clip-path: url(#circle);
-  }
-  svg {
-    display: none;
+    clip-path: url(#);
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    border-radius: 50%;
   }
   .mind_text {
     width: 100%;
     float: right;
     text-align: center;
     border-radius: 25px;
-    padding: 3em 1em 1.5em 1em;
+    padding: 2em 1em 2em 1em;
     margin-top: 1em;
   }
   .mind_text > span {
     font-family: "bold";
   }
   .mind_text > span:nth-child(1) {
-    font-size: 3vw;
-    margin-bottom: 0.5em;
-    display: block;
-    position: absolute;
-    top: 48%;
-    left: 16%;
+    font-size: 0vw;
   }
   .mind_text > span:nth-child(2) {
     width: 60%;
@@ -735,6 +732,9 @@
     margin: 1em 0 0 auto;
     line-height: 1.5em;
     text-align: start;
+  }
+  .pink_bg {
+    width: 0%;
   }
   /* 상품슬라이드 */
 
