@@ -15,6 +15,42 @@
     transform: translateY(0px);
   }
 }
+/* header */
+.nav_info {
+  /* animation-name: nav; */
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes nav {
+  0% {
+    background-position: 0% -28.11px;
+    opacity: 1;
+  }
+  0% {
+    background-position: 0% -28.11px;
+    opacity: 1;
+  }
+  10% {
+    background-position: 0% -287.934px;
+    opacity: 1;
+  }
+  19.99% {
+    background-position: 0% -287.934px;
+    opacity: 0;
+  }
+  20% {
+    background-position: 0% -543.934px;
+    opacity: 1;
+  }
+  25% {
+    background-position: 0% -543.934px;
+    opacity: 0;
+  }
+  100% {
+    background-position: 0% 50%;
+    opacity: 1;
+  }
+}
 /* 관람차 */
 .justGospin {
   animation: justGo 30s linear infinite;

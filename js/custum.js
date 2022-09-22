@@ -6,12 +6,44 @@ $(document).ready(function () {
   //   }, 500);
   //   return false;
   // });
+  window.onresize = function () {
+    document.location.reload();
+  };
+  // header
+  $(".gnb > li > a, .gnb > li > ul").on("mouseenter", function () {
+    $(".gnb > li > ul, .nav_bg").stop().slideDown(200);
+  });
+
+  $(".nav_bg, header").on("mouseleave", function () {
+    $(".gnb > li > ul, .nav_bg").stop().slideUp(100)
+  });
+
+
+$('.gnb > li:nth-child(1)').hover(function(){
+  $('.nav_info').css('background', 'url(../image/header/nav/nav_0.png) 0% -2347.286px')
+})
+$('.gnb > li:nth-child(2)').hover(function(){
+  $('.nav_info').css('background', 'url(../image/header/nav/nav_1.png) 0% -2347.286px')
+})
+$('.gnb > li:nth-child(3)').hover(function(){
+  $('.nav_info').css('background', 'url(../image/header/nav/nav_3.png) 0% -2347.286px')
+})
+$('.gnb > li:nth-child(4)').hover(function(){
+  $('.nav_info').css('background', 'url(../image/header/nav/nav_3.png) 0% -2347.286px')
+})
+$('.gnb > li:nth-child(5)').hover(function(){
+  $('.nav_info').css('background', 'url(../image/header/nav/nav_4.png) 0% -2347.286px')
+})
+$('.gnb > li:nth-child(6)').hover(function(){
+  $('.nav_info').css('background', 'url(../image/header/nav/nav_5.png) 0% -2347.286px')
+})
+
 
   //sec1 풍선 고정
   if (matchMedia("screen and (max-width:767px)").matches) {
     var sec1H = $(".sec1_entrepreneurship").outerHeight();
     console.log(sec1H);
-    $(".sec2_productInfor").css("margin-top", `${sec1H - sec1H / 3}px`);
+    $(".sec2_productInfor").css("margin-top", `${sec1H - sec1H / 2.8}px`);
   } else if (matchMedia("screen and(min-width:768px)").matches) {
     $(window).scroll(function () {
       //스크롤 높이 측정
