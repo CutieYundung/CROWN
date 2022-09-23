@@ -167,11 +167,11 @@ $(document).ready(function () {
   if(matchMedia('screen and (max-width:767px)').matches){
   }else if(matchMedia('screen and (min-width:768px)').matches){
     $('.menu_icon').click(function(){
-      $('.map_wrap').show()
+      $('.map_wrap').fadeIn(300)
       
     })
     $('.close_btn').click(function(){
-      $('.map_wrap').hide()
+      $('.map_wrap').fadeOut(300)
     })
   }
   // 이 안으로 작성

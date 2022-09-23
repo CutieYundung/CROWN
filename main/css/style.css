@@ -1150,12 +1150,12 @@ footer li a:hover {
 }
 .map_title h1 {
   font-size: 2vw;
-  color: #f675a7;
+  color: #c54769;
 }
 .map_title p {
   margin: 1em 0;
   font-size: 1.2em;
-  color: #444;
+  color: #817879;
 }
 .map_menu {
   display: flex;
@@ -1180,29 +1180,34 @@ footer li a:hover {
 .map h3 {
   text-align: center;
   margin: 1.7em 0 1em 0;
-  color: #c54769;
+  color: #f675a7;
   transition: 0.2s;
 }
 .map ul li {
   margin-bottom: 1em;
 }
 .map ul li a {
-  color: #444444;
+  color: #555;
   transition: 0.2s;
 }
 .map ul li a:hover {
-  color: #f675a7;
+  color: #ff7e00;
 }
 .map ul li a::before {
   content: "\2022  ";
   font-size: 1.2em;
   color: #f675a7;
 }
+.map ul li a:hover::before {
+  content: "\2022  ";
+  font-size: 1.2em;
+  color: #ff7e00;
+}
 .map:hover .map_icon {
   transform: translateY(-5%);
 }
 .map:hover h3 {
-  color: #f97fb5;
+  color: #ff7e00;
 }
 .close_btn {
   width: 50px;
