@@ -41,7 +41,7 @@ section {
 header {
   width: 100%;
   position: fixed;
-  z-index: 100;
+  z-index: 50;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgb(255, 255, 255, 0.2);
@@ -79,42 +79,16 @@ header:hover {
   background: linear-gradient(to bottom, #fff, #fff5fd);
 }
 header:hover ul.gnb li a {
-  color: #f97fb5;
-  position: relative;
-}
-header:hover ul.gnb li a:hover {
-  color: #ff7e00;
-  position: relative;
-}
-header:hover ul.gnb li a.orange {
-  color: #ff7e00;
+  color: #817879;
   position: relative;
 }
 header:hover ul.gnb > li > ul > li > a:hover {
-  color: #ff7e00;
+  color: #f675a7;
   position: relative;
   /* font-family: "bold"; */
 }
-header:hover ul.gnb > li > ul > li > a::before {
-  content: "";
-  width: 0%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-bottom: 1.7px solid #ff7e00;
-  transition: 0.3s;
-}
 header:hover ul.gnb > li > ul > li > a:hover::before {
-  content: "";
-  width: 70%;
-  height: 100%;
-  position: absolute;
-  top: 2px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-bottom: 1.7px solid #ff7e00;
+  content: "\2022 ";
 }
 
 /* navigation 네비게이션 */
@@ -357,7 +331,6 @@ header:hover .menu_lang a {
   position: absolute;
   top: 52%;
   left: 50%;
-  z-index: 100;
   transform: translate(-50%, -50%);
 }
 .justGo_rotation {
@@ -766,7 +739,7 @@ ul.person_object li img {
   cursor: pointer;
   padding: 0.2em 0.5em;
   transition: 0.3s;
-  z-index: 500;
+  z-index: 49;
 }
 .sec2_tab ul li:hover {
   color: #f97fb5;
@@ -781,7 +754,7 @@ ul.person_object li img {
   background-color: #fff;
   border-radius: 60px;
   padding: 2.5em 2em 0em 2em;
-  margin: 2em 0 3.5em 0;
+  margin: 2em 0 0em 0;
 }
 .story_img {
   flex: 0.8;
@@ -843,7 +816,6 @@ article p {
 .prod_wrap {
   width: 90%;
   height: auto;
-  margin: auto;
   overflow: hidden;
 }
 .prod_slide {
@@ -853,8 +825,9 @@ article p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 1em;
+  padding: 3.5em 1em 0 1em;
   margin-right: 2em;
+  transition: 0.3s;
 }
 .prod_bg {
   margin: auto;
@@ -1145,4 +1118,122 @@ footer li a:hover {
 }
 .familysite {
   flex: 1;
+}
+
+/* 팝업 */
+.map_wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 100vw;
+  height: 100vh;
+  /* background: url(../image/main_visual/mobile.jpg) no-repeat; */
+  background: url(../image/main_visual/sitemap_pink.jpg);
+  /* background: url(../image/main_visual/background2.jpg); */
+  /* background-color: #fff5f6; */
+}
+.map_wrap::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(255, 255, 255);
+}
+.map_inner {
+  height: 100%;
+  padding: 5em 10em 0 10em;
+}
+.map_title {
+  text-align: center;
+}
+.map_title h1 {
+  font-size: 2vw;
+  color: #f675a7;
+}
+.map_title p {
+  margin: 1em 0;
+  font-size: 1.2em;
+  color: #444;
+}
+.map_menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 31px;
+  padding: 3em 0;
+}
+.map_icon {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  transition: 0.5s;
+}
+.map_icon img {
+  max-width: 100%;
+}
+.map_icon5 {
+  padding-top: 1.5em;
+}
+.map h3 {
+  text-align: center;
+  margin: 1.7em 0 1em 0;
+  color: #c54769;
+  transition: 0.2s;
+}
+.map ul li {
+  margin-bottom: 1em;
+}
+.map ul li a {
+  color: #444444;
+  transition: 0.2s;
+}
+.map ul li a:hover {
+  color: #f675a7;
+}
+.map ul li a::before {
+  content: "\2022  ";
+  font-size: 1.2em;
+  color: #f675a7;
+}
+.map:hover .map_icon {
+  transform: translateY(-5%);
+}
+.map:hover h3 {
+  color: #f97fb5;
+}
+.close_btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  cursor: pointer;
+  transform: 0.3s;
+}
+.close_btn span {
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #f675a7;
+  border-radius: 15px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  transform: 0.3s;
+}
+.close_btn span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.close_btn span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.close_btn:hover {
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 50%;
+}
+.close_btn:hover span {
+  background-color: #ff7e00;
 }

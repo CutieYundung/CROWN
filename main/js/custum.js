@@ -132,6 +132,13 @@ $(document).ready(function () {
     $(this).addClass("on"); //li에 클래스 값 추가
   });
 
+  // sec2- hover
+  $('.prod_box').hover(function(){
+    $(this).css('transform', 'translateY(-4%)')
+  }, function(){
+    $(this).css('transform', 'translateY(0%)')
+  })
+
   // sec4 - hover
   $(".service_text> div > a").on("mouseenter", function () {
     $(".sec4_service").css(
@@ -154,6 +161,18 @@ $(document).ready(function () {
     });
   } else if (matchMedia("screen and (min-width:768px)").matches) {
     $(".familysite > ul").css("display", "block");
+  }
+
+  // 사이트맵 팝업창
+  if(matchMedia('screen and (max-width:767px)').matches){
+  }else if(matchMedia('screen and (min-width:768px)').matches){
+    $('.menu_icon').click(function(){
+      $('.map_wrap').show()
+      
+    })
+    $('.close_btn').click(function(){
+      $('.map_wrap').hide()
+    })
   }
   // 이 안으로 작성
 });
