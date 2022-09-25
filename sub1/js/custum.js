@@ -89,21 +89,22 @@ $(document).ready(function () {
       $(".gnb > li:nth-child(6) >a").css("color", "#f97fb5");
     }
   );
-  // $("header").on("mouseenter", function () {
-  //   $(".gnb > li > a").css("color", "#f97fb5");
-  // });
-  // $("header").on("mouseleave", function () {
-  //   $(".gnb > li > a").css("color", "#");
-  // });
+  $("header").on("mouseenter", function () {
+    $(".gnb > li > a").css("color", "#f97fb5");
+  });
+  $("header").on("mouseleave", function () {
+    $(".gnb > li > a").css("color", "#");
+  });
 
   //sec1 풍선 고정
-  if (matchMedia("screen and (max-width:767px)").matches) {
-  } else if (matchMedia("screen and(min-width:768px)").matches) {
-    $(".s_gnb").click(function () {
-      $(this).css("background", "#000");
-      $(".s_nav > ul").slideDown();
-    });
-  }
+  // if (matchMedia("screen and (max-width:767px)").matches) {
+  // } else if (matchMedia("screen and(min-width:768px)").matches) {
+  // }
+  //서브네비게이션
+  $(".s_nav").click(function () {
+    $(this).children("ul").stop().slideToggle();
+  });
+
   // 사이트맵 팝업창
   if (matchMedia("screen and (max-width:767px)").matches) {
   } else if (matchMedia("screen and (min-width:768px)").matches) {
@@ -116,3 +117,24 @@ $(document).ready(function () {
   }
   // 이 안으로 작성
 });
+
+//더보기 활성화
+$(window).on("load", function () {
+  load("#js-more", "8"); //초기 보여지는 목록 수
+  $("#more-btn-wrap .more").on("click", function () {
+    load("#js-more", "8", "#more-btn-wrap");
+  });
+});
+
+function load(id, cnt) {
+  var more_list = id + " .js-more:not(.active)";
+  var more_length = $(more_list).length;
+  var more_total_cnt;
+  if (cnt < more_length) {
+    more_total_cnt = cnt;
+  } else {
+    more_total_cnt = more_length;
+    $(".button").hide();
+  }
+  $(more_list + ":lt(" + more_total_cnt + ")").addClass("active");
+}
