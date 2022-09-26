@@ -125,7 +125,7 @@ $(window).on("load", function () {
     $("#more-btn-wrap .more").on("click", function () {
       load("#js-more", "6", "#more-btn-wrap");
     });
-  } else if (matchMedia("screen and(min-width:768px)").matches) {
+  } else if (matchMedia("screen and (min-width:768px)").matches){
     //더보기 활성화
       load("#js-more", "8"); //초기 보여지는 목록 수
       $("#more-btn-wrap .more").on("click", function () {

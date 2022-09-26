@@ -56,13 +56,13 @@ header {
   position: relative;
   background-color: #c54769;
 }
-/* .top_stick::after {
+.top_stick::after {
   content: "";
   position: absolute;
   width: 20%;
   height: 2px;
   background-color: #ff7e00;
-} */
+}
 .header_inner {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;

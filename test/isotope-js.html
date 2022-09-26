@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/isotope.pkgd.min.js"></script>
+  </head>
+  <body>
+    <section class="portfolio_section">
+      <ul class="btn_set">
+        <li class="on">
+          <a href="#" data-filter="*">All</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".design">Design</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".publishing">Publishing</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".responsive">Responsive </a>
+        </li>
+      </ul>
+      <div class="portfolio_item_wrap">
+        <div class="portfolio_item publishing">//해당 filter class</div>
+        <div class="portfolio_item design">//해당 filter class</div>
+        <div class="portfolio_item responsive">//해당 filter class</div>
+      </div>
+    </section>
+    <script>
+        $(document).ready( function() {
+
+      $('.portfolio_item_wrap').isotope({
+        itemSelector: '.portfolio_item',
+      });
+
+      // filter items on button click
+      $('.btn_set').on( 'click', 'li', function() {
+        var filterValue = $(this).children().attr('data-filter');
+        $('.portfolio_item_wrap').isotope({ filter: filterValue });
+        $('.btn_set li').removeClass('on');
+        $(this).addClass('on');
+      });
+          })
+
+
+      출처: https://eunyoe.tistory.com/14 [eunyo의 it이야기:티스토리]
+    </script>
+  </body>
+</html>
