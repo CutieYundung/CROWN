@@ -120,12 +120,19 @@ $(document).ready(function () {
 
 //더보기 활성화
 $(window).on("load", function () {
-  load("#js-more", "8"); //초기 보여지는 목록 수
-  $("#more-btn-wrap .more").on("click", function () {
-    load("#js-more", "8", "#more-btn-wrap");
-  });
+  if (matchMedia("screen and (max-width:767px)").matches) {
+    load("#js-more", "7"); //초기 보여지는 목록 수
+    $("#more-btn-wrap .more").on("click", function () {
+      load("#js-more", "6", "#more-btn-wrap");
+    });
+  } else if (matchMedia("screen and(min-width:768px)").matches) {
+    //더보기 활성화
+      load("#js-more", "8"); //초기 보여지는 목록 수
+      $("#more-btn-wrap .more").on("click", function () {
+        load("#js-more", "8", "#more-btn-wrap");
+    });
+    }
 });
-
 function load(id, cnt) {
   var more_list = id + " .js-more:not(.active)";
   var more_length = $(more_list).length;
@@ -138,3 +145,4 @@ function load(id, cnt) {
   }
   $(more_list + ":lt(" + more_total_cnt + ")").addClass("active");
 }
+
