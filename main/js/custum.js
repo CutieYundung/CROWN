@@ -139,6 +139,22 @@ $(document).ready(function () {
     $(this).css('transform', 'translateY(0%)')
   })
 
+  //sec3 페이드업
+
+$(window).scroll(function(){
+  var top = $(window).scrollTop();
+  console.log(top);
+  if (matchMedia("screen and (max-width:767px)").matches) {
+    if(top >= 950) {
+      $(".esg_content").show().addClass("active");
+    }
+  } else if (matchMedia("screen and (min-width:768px)").matches) {
+  if(top >= 2630) {
+    $(".esg_content").show().addClass("active");
+  }
+  }
+})
+
   // sec4 - hover
   $(".service_text> div > a").on("mouseenter", function () {
     $(".sec4_service").css(
